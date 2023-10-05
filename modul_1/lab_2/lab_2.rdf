@@ -1,0 +1,350 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5/"
+     xml:base="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-5="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5">
+        <rdfs:comment>Онтология профилей CS GO</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#myFriend -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#myFriend">
+        <rdfs:label>друг</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#rankLevel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#rankLevel">
+        <rdfs:label>уровеньРанга</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#realName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#realName"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#Player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#Player">
+        <rdfs:label>Игрок</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#Rank -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#Rank">
+        <rdfs:label>Ранг</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#goodPlayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#goodPlayer">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#rankLevel"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#bigstar"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#rankLevel"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#kalash1"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#rankLevel"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#kalash2"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#rankLevel"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#kalash3"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#rankLevel"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#supreme"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#Player"/>
+        <rdfs:label>ХорошийИгрок</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#ard12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#ard12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#Player"/>
+        <untitled-ontology-5:myFriend rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#denstep"/>
+        <untitled-ontology-5:rankLevel rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#silver5"/>
+        <untitled-ontology-5:realName>Roman</untitled-ontology-5:realName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#bigstar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#bigstar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#Rank"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#cat1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#cat1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#Player"/>
+        <untitled-ontology-5:myFriend rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#foxx21"/>
+        <untitled-ontology-5:rankLevel rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#nova3"/>
+        <untitled-ontology-5:realName>Ivan</untitled-ontology-5:realName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#denstep -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#denstep">
+        <rdf:type rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#Player"/>
+        <untitled-ontology-5:myFriend rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#ard12"/>
+        <untitled-ontology-5:myFriend rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#professor"/>
+        <untitled-ontology-5:rankLevel rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#kalash3"/>
+        <untitled-ontology-5:realName>Denis</untitled-ontology-5:realName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#foxx21 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#foxx21">
+        <rdf:type rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#Player"/>
+        <untitled-ontology-5:myFriend rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#cat1"/>
+        <untitled-ontology-5:rankLevel rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#nova3"/>
+        <untitled-ontology-5:realName>Andrey</untitled-ontology-5:realName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#kalash1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#kalash1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#Rank"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#kalash2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#kalash2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#Rank"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#kalash3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#kalash3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#Rank"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#krluka -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#krluka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#Player"/>
+        <untitled-ontology-5:rankLevel rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#kalash3"/>
+        <untitled-ontology-5:realName>Anna</untitled-ontology-5:realName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#nagibator20012 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#nagibator20012">
+        <rdf:type rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#Player"/>
+        <untitled-ontology-5:realName>Artem</untitled-ontology-5:realName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#nova1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#nova1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#Rank"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#nova2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#nova2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#Rank"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#nova3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#nova3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#Rank"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#nova4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#nova4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#Rank"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#patiant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#patiant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#Player"/>
+        <untitled-ontology-5:rankLevel rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#bigstar"/>
+        <untitled-ontology-5:realName>Julia</untitled-ontology-5:realName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#professor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#professor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#Player"/>
+        <untitled-ontology-5:myFriend rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#denstep"/>
+        <untitled-ontology-5:rankLevel rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#kalash3"/>
+        <untitled-ontology-5:realName>Micha</untitled-ontology-5:realName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#silver1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#silver1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#Rank"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#silver2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#silver2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#Rank"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#silver3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#silver3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#Rank"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#silver4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#silver4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#Rank"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#silver5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#silver5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#Rank"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#silver6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#silver6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#Rank"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#supreme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#supreme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#Rank"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#ypuzipy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#ypuzipy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#Player"/>
+        <untitled-ontology-5:rankLevel rdf:resource="http://www.semanticweb.org/denvv/ontologies/2023/8/untitled-ontology-5#kalash1"/>
+        <untitled-ontology-5:realName>Igor</untitled-ontology-5:realName>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
